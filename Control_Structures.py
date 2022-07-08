@@ -118,6 +118,49 @@ while True:
     i += 1
 # continue can be used to jump back to the top of a loop
 
+# for loop iterates over a given sequence such as lists or strings
+# After for is a variable which represents an iterating item in the list/sequence
+# After the variable is the in operator followed by the list/sequence pointer
+words = ["henry", "is", "knocking", "over", "drinks"]
+for word in words:
+    print(word)
+
+# for loops can be used to iterate over strings (since they are just a list of chars)
+for l in words[0]:
+    print(l)
+# for loops can also use the break and continue statements
+# for loop is more often used with a fixed number of iterations
+
+# range() function returns a sequence of numbers
+# range(stop)
+# The sequence starts at 0, is incremented by 1, and stops before the specified number
+# To convert a range to a list we can use the list() function
+nums = list(range(5))
+print(nums)
+# If range is called with two arguments it begins at the first one instead of 0
+# range(start, stop)
+nums = list(range(5,10))
+print(nums)
+# If range is called with three arguments, the third one is the step
+# range(start, stop, step)
+nums = list(range(0,10,2))
+print(nums)
+
+# Using for loops and the range() function
+# list() doesn't need to be used with a for loop because it isn't being indexed
+for i in range(5):
+    print(i)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
