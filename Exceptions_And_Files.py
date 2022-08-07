@@ -111,7 +111,7 @@ file = open("filename.txt", "w+") # Why "w+"?
 for i in names: # Using a for loop that iterates through the list
     file.write(i + "\n")
 file.close()
-file= open("fileneame.txt", "r")
+file= open("filename.txt", "r")
 # Ouput the contents of the file
 print(file.read()) 
 file.close()
@@ -125,14 +125,15 @@ try:
 finally:
     myfile.close()
 
-# Another way to ensure that files are safely closed is using a with statement
+# A cleaner way to ensure that files are safely closed is using a with statement
     # Creates a temporary variable for accessing the file only within the with statement block
     # This file is automatically closed at the end of the statement even if exceptions occur within
 resetMyFile()
 with open("filename.txt") as myfile:
     print(myfile.read())
 
-
-
+with open("filename.txt") as f:
+    text = f.read()
+print(text)
 
 
